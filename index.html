@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en" class="page">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catbook</title>
+    <link
+      rel="icon"
+      type="images/x-icon"
+      href="./images/icons/icon.png"
+    >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/import.css">
+    <script src="search.js"></script>
+  </head>
+  <body class="page__body">
+    <header class="header">
+      <video 
+        src="./videos/video-bg.mp4"
+        autoplay
+        muted
+        loop
+        type="video/mp4"
+        class="header__video"
+      >
+      </video>
+      <div class="header__overlay"></div>
+      <div class="header__top">
+        <div class="header__container">
+          <div class="header__top-bar top-bar">
+            <a href="#" class="top-bar__logo-lonk">
+              <img
+                src="./images/icons/icon.png"
+                alt="logo"
+                class="top-bar__logo"
+              >
+            </a>
+            <div class="top-bar__mobile">
+              <a href="#menu" class="top-bar__menu">
+                <img
+                src="./images/icons/menu.svg"
+                alt="menu"
+                class="top-bar__menu-img"
+                >
+              </a>
+              <div class="page__menu menu" id="menu">
+                <div class="menu__container">
+                  <a href="#" class="menu__close">
+                    <img
+                      src="./images/icons/close.svg"
+                      alt=""
+                      class="menu__close-img"
+                    >
+                  </a>
+                  <div class="menu__navigation">
+                    <nav class="menu__nav nav">
+                      <ul class="nav__list">
+                        <li class="nav__item">
+                          <a href="books.html" class="nav__link">
+                            Книги
+                          </a>
+                        </li>
+                        <li class="nav__item">
+                          <a href="faq.html" class="nav__link">
+                            ЧаПи
+                          </a>
+                        </li>
+                        <li class="nav__item">
+                          <a href="help.html" class="nav__link">
+                            Довідка
+                          </a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+        
+              </div>
+              <div class="top-bar__form">
+                <form id="searchForm" class="form">
+                  <div class="form__input-container">
+                    <input
+                      type="text"
+                      id="searchInput"
+                      placeholder="Введіть назву книги"
+                      class="form__input"
+                      autocomplete="off"
+                    >
+                    <button
+                      type="button"
+                      class="form__clear"
+                      id="clearButton"
+                      aria-label="Очистити"
+                    >
+                      <img
+                        src="./images/icons/close.png"
+                        alt="clear"
+                        class="form__clear-img"
+                      >
+                    </button>
+                  </div>
+
+                  <button 
+                    type="button"
+                    class="form__button"
+                    id="searchButton"
+                  >
+                    <img 
+                      src="./images/icons/search.png" 
+                      alt="search"
+                      class="form__button-img"
+                    >
+                  </button>
+                </form>
+                <div id="suggestions" class="form__sug"></div>
+              </div>
+              
+           
+            </div>
+          </div>
+          <div class="header__content">
+            <h1 class="header__title">
+              Catbook
+            </h1>
+            <p class="header__text">
+              Книжковий світ у твоїх лапках
+            </p>
+            
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="main__container">
+        <h1 class="main__title">
+          Про нас
+        </h1>
+       
+        <div class="main__grid">
+          <div class="main__text-block">
+            <p class="main__text">
+              Ласкаво просимо до нашого книжкового форуму, де сторінки книг оживають
+              в обговореннях! У нашій віртуальній книжковій спільноті Ви знайдете місце
+              для розмов про улюблені твори, відкриєте нові літературні шедеври та
+              поділитесь думками з іншими книголюбами. Незалежно від того, чи Ви
+              літературний експерт, чи читач-новачок, або й  просто намагаєтесь знайти
+              Вашу наступну книгу, наш форум відкритий для всіх, хто любить світ друкованого слова.
+            </p>
+            <p class="main__text">
+              Обговорюйте найсвіжіші бестселери, класичні твори та забуті перлини
+              літератури. Діліться своїми враженнями та долучайтеся до жвавих дискусій.
+          
+            </p>
+            <p class="main__text">
+              Приєднуйтеся до нашої спільноти сьогодні, щоб зануритися у захопливий
+              світ книжок та знайти нових друзів зі схожими інтересами. На нашому
+              форумі кожна книга стає приводом для нових вражень та відкриттів!
+            </p>
+          </div>
+          <div class="main__img-bg"></div>
+          <img
+            src="./images/main-cat.png"
+            alt="cat"
+            class="main__img"
+          >
+        </div>
+        
+      </div>
+    </main>
+
+    <footer class="footer">
+      <a 
+        href="mailto:darinakuharec61@gmail.com"
+        class="footer__contact"
+      >
+        darinakuharec61@gmail.com
+      </a>
+      
+      <p class="footer__copyright">
+        ©Daryna Kukharets 2024
+      </p>
+
+      <a 
+        href="tel:+380960757575"
+        class="footer__contact"
+      >
+        +(380)96-075-75-75
+      </a>
+    </footer>
+
+  </body>
+</html>

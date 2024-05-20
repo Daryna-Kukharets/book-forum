@@ -1,0 +1,46 @@
+.top-bar {
+  padding-top: 20px;
+  
+  @include onDesktop {
+    display: flex;
+    align-items: center;
+  }
+
+  &__mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    @include onDesktop {
+      width: 100%;
+      justify-content: space;
+    }
+  }
+
+  &__logo {
+    display: none;
+
+    @include onDesktop {
+      display: block;
+      height: 80px;
+    }
+  }
+
+  &__menu {
+    @include onDesktop {
+      display: none;
+    }
+  }
+
+  &__menu-img {
+    @include hover(transform, scale(1.2));
+
+    @include onTablet {
+      height: 15px;
+    }
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+}

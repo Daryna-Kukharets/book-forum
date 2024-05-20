@@ -1,0 +1,56 @@
+.menu {
+  box-sizing: border-box;
+  padding-top: 20px;
+  position: relative;
+
+  @include onDesktop {
+    padding-top: 0;
+  }
+
+  &#menu {
+    @media (max-width: $desktop-min-width) {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(313deg, rgba(69,37,80,1) 0%, rgba(48,31,73,1) 38%, rgba(42,25,91,1) 100%);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      height: 100vh;
+      z-index: 1;
+
+      transition: all $effect-duration;
+      opacity: 0;
+      transform: translateX(-100%);
+      pointer-events: none;
+
+      &:target {
+        opacity: 1;
+        transform: translateX(0);
+        pointer-events: all;
+      }
+    }
+  }
+
+  &__container {
+    @include container;
+  }
+
+  &__navigation {
+    position: relative;
+    z-index: 2;
+  }
+
+  &__close-img {
+    @include hover(transform, scale(1.2));
+
+    @include onTablet {
+      height: 20px;
+    }
+
+    @include onDesktop {
+      display: none;
+    }
+  }
+}

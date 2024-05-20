@@ -1,0 +1,74 @@
+.main {
+
+  background-color: rgb(54, 36, 79);
+  padding-bottom: 40px;
+
+  &__container {
+    @include container;
+  }
+
+  &__grid {
+    @include onTablet {
+      display: flex;
+      justify-content: space-around;
+    }
+  }
+
+  &__title {
+    font-family: "Pacifico", cursive;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    font-weight: 500;
+    font-size: 50px;
+  }
+
+  &__text {
+    color: #fff;
+    font-weight: 400;
+    text-indent: 20px;
+    line-height: 130%;
+    text-align: justify;
+    padding-top: 10px;
+  }
+
+  &__text-block {
+    @include onTablet {
+      width: 50%;
+    }
+  }
+
+  &__img-bg {
+    @include onTablet {
+      margin-top: 10px;
+      height: 280px;
+      width: 280px;
+      background-color: #b778eb;
+      position: relative;
+    }
+  }
+  
+  &__img {
+    display: none;
+    font-size: 18px;
+    
+    @include onTablet {
+      display: block;
+      position: absolute;
+      right: 4%;    
+      height: 290px;
+      overflow: hidden;
+    }
+
+    @include onDesktop {
+      right: 12%;
+    }
+
+    @include hover(transform, scale(1.1));
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}

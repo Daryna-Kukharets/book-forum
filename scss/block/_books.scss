@@ -1,0 +1,156 @@
+.books {
+  margin-top: 200px;
+
+  &__table {
+    border-collapse: collapse;
+    margin: 30px auto;
+    width: 80%;
+    font-size: 12px;
+    border-radius: 8px 8px 0 0;
+    overflow: hidden;
+    box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.1);
+
+    @include onTablet {
+      font-size: 20px;
+    }
+
+    @include onDesktop {
+      font-size: 25px;
+    }
+  }
+
+  &__thead-tr {
+    background-color: #04000acd;
+    color: #fff;
+    text-align: left;
+  }
+
+  &__th,
+  &__td {
+    padding: 12px 15px;
+  }
+  
+  &__tbody-tr:nth-last-of-type(even) {
+    background-color: rgba(11, 0, 31, 0.398);
+  }
+
+  &__tbody-tr {
+    border-bottom: 1px solid #ffffffc0;
+    color: #fff;
+    font-weight: 400;
+
+    &:hover {
+      cursor: pointer;
+      background-color: #b05fe675;
+      transition: all $effect-duration;
+    }
+  }
+
+
+  &__tbody-tr:last-of-type {
+    border-bottom: 3px solid #fff ;
+  }
+
+  &__th-img {
+    height: 40px;
+
+    @include onTablet {
+      height: 100px;
+    }
+
+    @include onDesktop {
+      height: 150px;
+    }
+  }
+
+  &__back {
+    height: 50px;
+    width: 50px;
+    background-color: #865cdb;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 40px;
+    left: 20px;
+
+    @include hover(transform, scale(1.2));
+
+    @include onTablet {
+      height: 60px;
+      width: 60px;
+      left: 30px;
+    }
+
+    @include onDesktop {
+      height: 70px;
+      width: 70px;
+      left: 40px;
+    }
+  }
+
+  &__back-img {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    height: 30px;
+    
+    @include onTablet {
+      height: 40px;
+    }
+
+    @include onDesktop {
+      height: 50px;
+    }
+  }
+
+  &__func {
+    display: flex;
+    gap: 80px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__button {
+    height: 30px;
+    width: max-content;
+    border-radius: 5px;
+    background-color: #9e73f377;
+    border: transparent;
+    color: #e9e9e9e1;
+    transition: all 0.5s;
+    font-size: 16px;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
+
+    &:hover {
+      background-color: #b089ffd1;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: rgb(34, 0, 128);
+    }
+  }
+
+  &__label {
+    color: #e9e9e9e1;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
+  }
+
+  &__select {
+    background-color: #7249c3;
+    color: #e9e9e9e1;
+    font-size: 16px;
+    border-radius: 5px;
+    padding: 5px;
+    cursor: pointer;
+
+    @include onDesktop {
+      font-size: 20px;
+    }
+  }
+}

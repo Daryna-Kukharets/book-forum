@@ -1,0 +1,44 @@
+.footer {
+  background-image: url(../images/stars.jpg);
+  margin: 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+
+  
+  &__copyright,
+  &__contact {
+
+    @include container;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 400;
+  }
+  
+  &__contact {
+    position: relative;
+    transition: all $effect-duration;
+
+    &:after {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 50%;
+      bottom: -5px;
+      height: 2px;
+      width: 0;
+      background-color: #fff;
+      transform: translateX(-50%);
+      transition: all 0.3s;
+    }
+  
+    &:hover:after {
+      width: 100%;
+      background-color: #9d84db;
+    }
+
+    &:hover {
+      color: #9d84db;
+    }
+  }
+}
