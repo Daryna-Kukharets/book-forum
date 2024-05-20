@@ -4,7 +4,6 @@
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
-
   
   &__copyright,
   &__contact {
@@ -16,8 +15,13 @@
   }
   
   &__contact {
+    display: none;
     position: relative;
     transition: all $effect-duration;
+
+    @include onTablet {
+      display: block;
+    }
 
     &:after {
       content: "";
