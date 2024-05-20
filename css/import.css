@@ -507,7 +507,14 @@ ul {
   position: relative;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+  display: none;
 }
+@media (min-width: 768px) {
+  .footer__contact {
+    display: block;
+  }
+}
+
 .footer__contact:after {
   content: "";
   display: block;
